@@ -158,3 +158,32 @@ var tulipExample = tulip
 tulipExample.color = "yellow"
 print("\(tulipExample.name) is \(tulipExample.color) and it blooms in \(tulipExample.season)")
 print("\(tulip.name)s are \(tulip.color) and it bloom in \(tulip.season)")
+
+
+
+//HEAD: EXAMPLE 9 - CLASSES
+//define a class
+class Countries {
+  var name : String = ""
+  var continent : String = ""
+  var currency : String = ""
+  var population : Int = 0
+}
+
+// create instance of countries
+var country1 = Countries()
+
+// access properties and assign new values
+country1.name = "Turkey"
+country1.continent = "Asia and Europe"
+country1.currency = "TL"
+country1.population = 84000000
+
+print("Name: \(country1.name), Continent: \( country1.continent) ", "Currency: \(country1.currency), Population: \( country1.population) ")
+
+//passed by reference
+let country2 = country1
+country2.name = "Turkiye"
+print(country1.name)
+print(country2.name)
+
