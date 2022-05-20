@@ -75,3 +75,33 @@ while num <= lastNum{
     num += 1
 }
 print("Sum: \(total)")
+
+
+
+//HEAD: EXAMPLE 6 - FUNCTIONS
+var totalPrimeNumbers = 0
+var flag : Bool  = false
+
+//Adding prime numbers between x and y parameters
+func sumPrimeNumbers(x : Int, y : Int){
+   
+    for nmbr in stride(from: x, through: y, by: 1) {
+        //Checking if the number is prime
+        for i in stride(from: 2, through: nmbr / 2, by: 1) {
+            //If the number is divisible by any number, that is, if it is not prime, flag variable is set to true and the loop is exited on break command
+            if(nmbr % i == 0){
+                    flag = true
+                    break
+                }
+            }
+        //If the flag variable is false, that is, the number is not divisible by any number without a remainder, the number is prime and the number is added to the total variable
+        if flag == false {
+                totalPrimeNumbers = totalPrimeNumbers + nmbr
+            }
+            flag = false
+        }
+    print ("Sum: \(totalPrimeNumbers)")
+}
+
+sumPrimeNumbers(x: 3, y: 7)
+
