@@ -53,3 +53,12 @@ cityPlateCodes.forEach {
 }
 
 
+//HEAD: EXAMPLE 4 - CONTROL FLOW - FOR-IN LOOP
+//create an numbers array
+var numbers = [28, 51, 70, 38]
+var sum : Int = 0
+//all numbers in the array are summed and assigned to the sum variable
+for number in numbers {
+    sum += number
+}
+print ("Sum: \(sum)")
