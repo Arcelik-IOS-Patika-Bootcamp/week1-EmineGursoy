@@ -62,3 +62,16 @@ for number in numbers {
     sum += number
 }
 print ("Sum: \(sum)")
+
+
+//HEAD: EXAMPLE 5 - CONTROL FLOW - WHILE LOOPS
+//creating and initializing variables
+var num = 0, lastNum = 10, total = 0
+//summing odd numbers from 0 to 10
+while num <= lastNum{
+    if (num % 2 != 0){
+        total += num
+     }
+    num += 1
+}
+print("Sum: \(total)")
