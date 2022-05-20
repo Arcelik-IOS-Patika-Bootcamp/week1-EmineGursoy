@@ -29,3 +29,27 @@ var uniqueColors = Set(colors)
 //sort the color values ​​alphabetically and assign them to a new variable
 var sortedUniqueColors = uniqueColors.sorted()
 print("Colors: \(sortedUniqueColors)")
+
+
+//HEAD: EXAMPLE 3 - COLLECTION TYPES - DICTIONARY
+//create a dictionary
+var cityPlateCodes : [Int : String] = [34: "İstanbul", 07: "Antalya", 42: "Konya", 06: "Ankara", 01: "Adana"]
+//add another key and value to the dictionary
+cityPlateCodes[35] = "İzmir"
+//check if the dictionary is empty
+cityPlateCodes.isEmpty
+//get first key and value of the dictionary (it's changeable)
+cityPlateCodes.first
+//assign keys of the dictionary to a variable
+var keys = cityPlateCodes.keys
+print(keys)
+//assign values of the dictionary to a variable
+var values = cityPlateCodes.values
+print(values)
+//print all keys and values of the dictionary
+cityPlateCodes.forEach {
+(key, value) in
+    print("\(key) - \(value)")
+}
+
+
