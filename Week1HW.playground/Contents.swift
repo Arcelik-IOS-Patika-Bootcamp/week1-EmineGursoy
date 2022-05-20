@@ -105,3 +105,32 @@ func sumPrimeNumbers(x : Int, y : Int){
 
 sumPrimeNumbers(x: 3, y: 7)
 
+
+//HEAD: EXAMPLE 7 - ENUMERATIONS
+enum Seasons {
+   case Spring
+   case Summer
+   case Autumn
+   case Winter
+}
+
+var season = Seasons.Spring
+print("\(season):")
+
+//Whichever season is in the season variable, the months of that season are written on the screen
+switch season {
+   case .Spring:
+      print("March, April, May")
+   case .Summer:
+      print("June, July, August")
+   case .Autumn:
+      print("September, October, November")
+   case .Winter:
+      print("December, January, February")
+   
+}
+
+let spring = Seasons.Spring
+let summer = Seasons.Summer
+let autumn = Seasons.Autumn
+let winter = Seasons.Winter
