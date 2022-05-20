@@ -187,3 +187,14 @@ country2.name = "Turkiye"
 print(country1.name)
 print(country2.name)
 
+
+
+//HEAD: EXAMPLE 10 - OPTIONALS
+var optionalValue : Int? = 5
+print(optionalValue ?? 0)
+
+if let num = optionalValue {
+    print("number: \(num) ")
+} else{
+    print("number was not assigned a value")
+}
