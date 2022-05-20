@@ -134,3 +134,27 @@ let spring = Seasons.Spring
 let summer = Seasons.Summer
 let autumn = Seasons.Autumn
 let winter = Seasons.Winter
+
+
+//HEAD: EXAMPLE 8 - STRUCTURES
+struct Flower {
+    let name: String
+    var color: String
+    var season: String
+}
+//Creating Flower objects
+let lilac = Flower(name: "Lilac", color: "purple", season:"spring")
+var tulip = Flower(name: "Tulip", color: "in various colors", season: "spring")
+let daffodil = Flower(name: "Daffodil", color: "yellow", season: "winter")
+let jasmine = Flower(name: "Jasmine", color: "white", season: "summer")
+
+print("\(lilac.name)s are \(lilac.color) and it bloom in \(lilac.season)")
+print("\(tulip.name)s are \(tulip.color) and it bloom in \(tulip.season)")
+print("\(daffodil.name)s are \(daffodil.color) and it bloom in \(daffodil.season)")
+print("\(jasmine.name)s are \(jasmine.color) and it bloom in \(jasmine.season)")
+
+//passed by value
+var tulipExample = tulip
+tulipExample.color = "yellow"
+print("\(tulipExample.name) is \(tulipExample.color) and it blooms in \(tulipExample.season)")
+print("\(tulip.name)s are \(tulip.color) and it bloom in \(tulip.season)")
